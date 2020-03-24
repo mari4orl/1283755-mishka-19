@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Мария Орлова](https://up.htmlacademy.ru/adaptive/19/user/1283755).
-* Наставник: `Неизвестно`.
+* Наставник: []Дмитрий Беллавин](https://htmlacademy.ru/profile/bellavin).
 
 ---
 
