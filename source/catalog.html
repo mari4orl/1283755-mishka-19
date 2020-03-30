@@ -14,29 +14,25 @@
         <button class="main-nav__toggle" type="button">
           Открыть меню
         </button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item--active">
-              <a href="#">Каталог товаров</a>
-            </li>
-            <li class="site-list__item">
-              <a href="form.html">Вязание на заказ</a>
-            </li>
-            <li class="site-list__item">
-              <a href="#">Поиск по сайту</a>
-            </li>
-            <li class="site-list__item">
-              <a href="#">Корзина: пока пуста</a>
-            </li>
-          </ul>
-        </div>
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Каталог товаров</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="form.html">Вязание на заказ</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Поиск по сайту</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Корзина: пока пуста</a>
+          </li>
+        </ul>
       </nav>
     </header>
 
     <main class="catalog-main">
-      <section class="main__promo">
-        <h1 class="main-heading">Каталог товаров</h1>
-      </section>
+      <h1 class="h1">Каталог товаров</h1>
       <section class="product-catalog">
         <ul class="product__list">
           <li class="product__item">
@@ -44,23 +40,23 @@
             <h3 class="product__name">Зайчик-попрыгайчик</h3>
             <p class="product__description">Рост 30 см, вес 200 г</p>
             <b class="product__cost">1 200 руб.</b>
-            <button class="product__cart" type="button"></button>
+            <button class="product__cart cart-btn"></button>
           </li>
           <li class="product-catalog__item">
             <img class="product__linen-busket-img" src="https://via.placeholder.com/150x150" alt="Вязанная корзинка" width="260" height="195">
             <h3 class="product__name">Корзинка для белья</h3>
             <p class="product__description">Диаметр 15 см, высота 10 см</p>
             <b class="product__cost">690 руб.</b>
-            <button class="product__cart" type="button"></button>
+            <button class="product__cart cart-btn"></button>
           </li>
           <li class="product-catalog__item">
             <img class="product__toy-busket-img" src="https://via.placeholder.com/150x150" alt="Вязанная корзинка большая" width="260" height="195">
             <h3 class="product__name">Большая корзинка для игрушек</h3>
             <p class="product__description">Диаметр 30 см, высота 30 см</p>
             <b class="product__cost">1 500 руб.</b>
-            <button class="product__cart" type="button"></button>
+            <button class="product__cart cart-btn"></button>
           </li>
-          <li class="product-catalog__item video">
+          <li class="product-catalog__item--video">
             <h3 class="video__title">Процесс производства</h3>
             <p class="video__description">По просьбам наших любимых фолловеров
               мы сняли для вас подробное видео о том, как появляются
