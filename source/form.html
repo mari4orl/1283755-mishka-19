@@ -34,8 +34,75 @@
     </header>
 
     <main class="main-form">
+      <section class="main__promo">
+        <h1 class="main-heading">Вязание на заказ</h1>
+      </section>
 
+      <p class="main-form__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
 
+      <section class="form-wrapper">
+        <form action="https://echo.htmlacademy.ru" method="post">
+          <fieldset class="form__type">
+            <legend>ТИП</legend>
+            <input type="radio" name="type" value="interior" id="interior" checked>
+            <label for="interior">Аксессуар для интерьера</label>
+            <input type="radio" name="type" value="toy" id="toy">
+            <label for="toy">Детская игрушка</label>
+          </fieldset>
+
+          <fieldset class="form__color">
+            <legend>Цвет</legend>
+
+            <input type="checkbox" name="white" id="white" checked>
+            <label for="white">Белый</label>
+
+            <input type="checkbox" name="grey" id="grey" checked>
+            <label for="grey">Серый</label>
+
+            <input type="checkbox" name="tiffany" id="tiffany">
+            <label for="tiffany">«Тиффани»</label>
+
+            <input type="checkbox" name="black" id="black">
+            <label for="black">Чёрный</label>
+
+            <input type="checkbox" name="pink" id="pink">
+            <label for="pink">Розовый</label>
+
+            <input type="checkbox" name="orange" id="orange">
+            <label for="orange">Оранжевый</label>
+          </fieldset>
+
+          <fieldset class="form__name">
+            <legend>ФИО</legend>
+            <label>Имя:
+              <input type="text" name="name" placeholder="Введите ваше имя*" required>
+            </label>
+            <label>Фамилия:
+              <input type="text" name="name" placeholder="Укажите фамилию*" required>
+            </label>
+            <label>Отчество:
+              <input type="text" name="name" placeholder="Отчество, если желаете">
+            </label>
+          </fieldset>
+
+          <fieldset class="form__tel">
+            <legend>тел</legend>
+            <input type="text" name="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
+          </fieldset>
+
+          <fieldset class="form__email">
+            <legend>E-mail</legend>
+            <input type="text" name="email" placeholder="Ваш Email*" required>
+          </fieldset>
+
+          <fieldset class="form__bonus">
+            <legend>Доп</legend>
+            <textarea name="bonus" rows="8" cols="20" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+          </fieldset>
+        </form>
+        <p class="form__notice">*Поля обязательны для заполнения</p>
+        <button type="submit" name="send order">ОТПРАВИТЬ ЗАКАЗ</button>
+      </section>
     </main>
 
     <footer class="page-footer">
