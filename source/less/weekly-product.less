@@ -1,17 +1,22 @@
 .weekly-product {
   .container();
+  margin-bottom: 76px;
 }
 
 .weekly-product__label {
   color: @green-light;
   font-weight: bold;
   font-size: 17px;
+  line-height: 17px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
 }
 
 .weekly-product__description {
   margin: 0;
   line-height: 24px;
   color: @grey-text;
+  margin-bottom: 30px;
 }
 
 .weekly-product__details {
@@ -37,4 +42,95 @@
 .weekly-product__cost {
   color: @grey-text;
   font-size: 17px;
+  margin-left: 67px;
+}
+
+.weekly-product__btn {
+  text-decoration: none;
+  width: 100%;
+}
+
+@media (min-width: @tablet-width) {
+  .weekly-product {
+    width: 772px;
+    padding-left: 51px;
+    padding-right: 53px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 128px;
+  }
+
+  .weekly-product__label {
+    margin-left: auto;
+    width: 70px;
+    text-align: center;
+    margin-bottom: 60px;
+  }
+
+  .weekly-product__description-wrapper {
+    width: 291px;
+    margin-right: 43px;
+    height: 240px;
+  }
+
+  .weekly-product__description {
+    font-size: 17px;
+    line-height: 30px;
+
+    margin-bottom: 52px;
+  }
+
+  .weekly-product__cost {
+    margin-top: -135px;
+    margin-left: 72px;
+  }
+
+  .weekly-product__btn {
+    margin-top: -60px;
+    width: 292px;
+    margin-left: -200px;
+    height: 52px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .weekly-product {
+    width: 875px;
+    margin-left: 225px;
+    padding-right: 50px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .weekly-product__label {
+    margin-left: auto;
+    width: 70px;
+    text-align: center;
+    margin-bottom: 60px;
+  }
+
+  .weekly-product__description-wrapper {
+    width: 291px;
+    margin-right: 43px;
+    height: 240px;
+  }
+
+  .weekly-product__description {
+    font-size: 17px;
+    line-height: 30px;
+
+    margin-bottom: 52px;
+  }
+
+  .weekly-product__cost {
+    margin-top: -135px;
+    margin-left: 72px;
+  }
+
+  .weekly-product__btn {
+    margin-top: -60px;
+    width: 292px;
+    margin-left: -200px;
+    height: 52px;
+  }
 }
