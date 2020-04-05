@@ -4,9 +4,9 @@
   background-color: @grey-bg;
 
   text-align: center;
+  min-height: 177px;
 
   padding-top: 76px;
-  padding-bottom: 74px;
 }
 
 .main-promo--bg {
@@ -14,5 +14,47 @@
   background-position: center;
   background-repeat: no-repeat;
 
-  padding-bottom: 120px;
+  height: 322px;
+}
+
+@media (min-width: @tablet-width) {
+  .main-promo {
+    width: 768px;
+
+    padding-top: 161px;
+    min-height: 226px;
+  }
+
+  .main-promo--grey {
+    padding-top: 106px;
+  }
+
+  .main-promo--bg {
+    background-image: url("../img/hero-tablet@1x.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+
+    height: 746px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-promo {
+    width: 1150px;
+
+    padding-top: 161px;
+    min-height: 255px;
+  }
+
+  .main-promo--grey {
+    padding-top: 106px;
+  }
+
+  .main-promo--bg {
+    background-image: url("../img/hero-desktop@1x.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+
+    height: 746px;
+  }
 }

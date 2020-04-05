@@ -1,11 +1,10 @@
 .social__list {
-  list-style: none;
+  .list-reset();
 
   padding-top: 25px;
   padding-bottom: 27px;
   padding-left: 60px;
   padding-right: 60px;
-  margin: 0;
   border-bottom: 1px solid #e5e5e5;
 
   display: flex;
@@ -27,5 +26,14 @@
 
   &:focus {
     color: #bde3dd;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .social__list {
+    width: 141px;
+    padding: 0;
+    padding-top: 58px;
+    padding-bottom: 57px;
   }
 }
