@@ -6,6 +6,10 @@
   line-height: 0;
 }
 
+.main-footer__logo {
+  display: none;
+}
+
 @media (min-width: @tablet-width) {
   .main-footer {
     width: 772px;
@@ -14,16 +18,20 @@
 
   .main-footer__wrapper {
     display: flex;
-    padding: 0 50px;
+    padding: 0 51px;
+    padding-top: 51px;
+    padding-bottom: 57px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .main-footer__logo {
+    display: block;
   }
 }
 
 @media (min-width: @desktop-width) {
   .main-footer {
     width: 1150px;
-  }
-
-  .main-footer__wrapper {
-    padding: 0 51px;
   }
 }

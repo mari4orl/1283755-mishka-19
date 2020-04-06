@@ -55,16 +55,22 @@
     width: 772px;
     padding-left: 51px;
     padding-right: 53px;
-    display: flex;
-    flex-wrap: wrap;
     margin-bottom: 128px;
+  }
+
+  .weekly-product__top {
+    display: flex;
+    margin-bottom: 60px;
   }
 
   .weekly-product__label {
     margin-left: auto;
     width: 70px;
     text-align: center;
-    margin-bottom: 60px;
+  }
+
+  .weekly-product__content {
+    display: flex;
   }
 
   .weekly-product__description-wrapper {
@@ -80,33 +86,48 @@
     margin-bottom: 52px;
   }
 
-  .weekly-product__cost {
-    margin-top: -135px;
-    margin-left: 72px;
-  }
-
-  .weekly-product__btn {
-    margin-top: -60px;
+  .weekly-product__order {
     width: 292px;
-    margin-left: -200px;
-    height: 52px;
+    margin-top: -82px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .weekly-product {
-    width: 875px;
-    margin-left: 225px;
+    width: 1150px;
+    padding-left: 97px;
     padding-right: 50px;
+    position: relative;
+  }
+
+  .weekly-product__top {
     display: flex;
-    flex-wrap: wrap;
+    margin-bottom: 52px;
   }
 
   .weekly-product__label {
-    margin-left: auto;
+    order: 1;
     width: 70px;
     text-align: center;
-    margin-bottom: 60px;
+    margin: 0;
+    margin-right: 58px;
+  }
+
+  .weekly-product__title {
+    order: 2;
+    margin-right: auto;
+  }
+
+  .weekly-product__content {
+    display: flex;
+    margin-left: 128px;
+  }
+
+  .weekly-product__image {
+    position: absolute;
+    right: 50px;
+    top: -63px;
+    z-index: -1;
   }
 
   .weekly-product__description-wrapper {
@@ -122,15 +143,9 @@
     margin-bottom: 52px;
   }
 
-  .weekly-product__cost {
-    margin-top: -135px;
-    margin-left: 72px;
-  }
-
-  .weekly-product__btn {
-    margin-top: -60px;
+  .weekly-product__order {
     width: 292px;
-    margin-left: -200px;
-    height: 52px;
+    margin-top: 111px;
+    margin-left: 128px;
   }
 }

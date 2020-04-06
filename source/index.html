@@ -36,6 +36,15 @@
           <li class="main-nav__item main-nav__item--cart">
             <a class="main-nav__link link" href="#">Корзина: пока пуста</a>
           </li>
+          <li class="main-nav__item--new">
+            <a class="main-nav__link link" href="#">Новые поступления</a>
+          </li>
+          <li class="main-nav__item--sale">
+            <a class="main-nav__link link" href="#">Распродажа</a>
+          </li>
+          <li class="main-nav__item--shipping">
+            Бесплатная доставка по России
+          </li>
         </ul>
       </nav>
     </header>
@@ -56,33 +65,39 @@
       </ul>
 
       <section class="weekly-product">
-        <h2 class="weekly-product__title h2">Вязаные корзинки</h2>
-        <div class="weekly-product__label">Товар недели</div>
-        <div class="weekly-product__description-wrapper">
-          <p class="weekly-product__description">Экологически чистая пряжа,<br> ручная работа.
-            Доступны в шести <br> расцветках и трех размерах.</p>
-          <table class="weekly-product__details">
-          <tr class="weekly-product__row">
-            <td class="weekly-product__col1">Цвет:</td>
-            <td class="weekly-product__col2">«Тиффани»/серый</td>
-          </tr>
-          <tr class="weekly-product__row">
-            <td class="weekly-product__col1">Диаметр:</td>
-            <td class="weekly-product__col2">25 см</td>
-          </tr>
-          <tr class="weekly-product__row">
-            <td class="weekly-product__col1">Высота:</td>
-            <td class="weekly-product__col2">15 см</td>
-          </tr>
-        </table>
+        <div class="weekly-product__top">
+          <h2 class="weekly-product__title h2">Вязаные корзинки</h2>
+          <div class="weekly-product__label">Товар недели</div>
         </div>
-        <picture class="weekly-product__image">
-          <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg">
-          <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg">
-          <img src="img/triple-set-mobile@1x.jpg">
-        </picture>
-        <b class="weekly-product__cost">Цена: 990 руб.</b>
-        <a href="#" class="weekly-product__btn btn">Заказать</a>
+        <div class="weekly-product__content">
+          <div class="weekly-product__description-wrapper">
+            <p class="weekly-product__description">Экологически чистая пряжа,<br> ручная работа.
+              Доступны в шести <br> расцветках и трех размерах.</p>
+            <table class="weekly-product__details">
+            <tr class="weekly-product__row">
+              <td class="weekly-product__col1">Цвет:</td>
+              <td class="weekly-product__col2">«Тиффани»/серый</td>
+            </tr>
+            <tr class="weekly-product__row">
+              <td class="weekly-product__col1">Диаметр:</td>
+              <td class="weekly-product__col2">25 см</td>
+            </tr>
+            <tr class="weekly-product__row">
+              <td class="weekly-product__col1">Высота:</td>
+              <td class="weekly-product__col2">15 см</td>
+            </tr>
+          </table>
+          </div>
+          <picture class="weekly-product__image">
+            <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg">
+            <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg">
+            <img src="img/triple-set-mobile@1x.jpg">
+          </picture>
+        </div>
+        <div class="weekly-product__order">
+          <b class="weekly-product__cost">Цена: 990 руб.</b>
+          <a href="#" class="weekly-product__btn btn">Заказать</a>
+        </div>
       </section>
       <section class="about-us">
         <h2 class="about-us__title h2">Коротко о нас:</h2>
@@ -192,9 +207,9 @@
 
     <footer class="main-footer">
       <div class="main-footer__wrapper">
-        <picture class="main-footer__logo">
-          <source media="(min-width: 768px)" srcset="img/logo-footer.svg">
-        </picture>
+        <a href="" class="main-footer__logo">
+          <img class="main-footer__logo-image" src="img/logo-footer.svg">
+        </a>
         <div class="main-footer__social social">
           <ul class="social__list">
             <li class="social__item">
