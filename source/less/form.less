@@ -1,13 +1,17 @@
 .form {
   .container();
+  padding-top: 29px;
+  padding-bottom: 55px;
 }
 
 .form__description {
   font-size: 13px;
   line-height: 24px;
   color: @grey-text;
+
+  margin: 0;
+  margin-bottom: 30px;
   width: 242px;
-  margin-top: 29px;
 }
 
 .form__form {
@@ -19,13 +23,13 @@
 .form__legend {
   color: @green-light;
   text-transform: uppercase;
+  font-size: 17px;
+
   padding: 0;
 }
 
 .form__list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+  .list-reset();
 }
 
 .form__radio-legend {
@@ -58,7 +62,6 @@
 .form__email,
 .form__personal {
   border-bottom: 2px solid @black;
-  width: 260px;
 }
 
 .form__personal-item {
@@ -82,10 +85,8 @@
   }
 }
 
-
 .form__bonus {
   border: 2px solid @black;
-  width: 260px;
 }
 
 .form__tel-legend,
@@ -105,4 +106,107 @@
 
 .form__btn {
   width: 100%;
+}
+
+@media (min-width: @tablet-width) {
+  .form {
+    width: 768px;
+    padding: 0;
+    padding-top: 80px;
+  }
+
+  .form__description {
+    width: 612px;
+    margin-bottom: 29px;
+    margin-left: 51px;
+
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .form__form {
+    font-size: 19px;
+  }
+
+  .fieldset {
+    display: flex;
+    padding: 50px;
+  }
+
+  .form__legend {
+    width: 58px;
+    margin-right: 107px;
+  }
+
+  .form__list {
+    width: 450px;
+  }
+
+  .form__checkbox-field,
+  .form__tel-field,
+  .form__email-field {
+    background-color: @grey-bg;
+  }
+
+  .form__checkbox-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .form__checkbox-item {
+    margin-right: 100px;
+    margin-bottom: 56px;
+  }
+
+  .form__tel-field {
+    padding-bottom: 0;
+  }
+
+  .form__email-field {
+    padding-top: 0;
+  }
+
+  .form__tel {
+    margin-bottom: 24px;
+    background-color: @grey-bg;
+  }
+
+  .form__email {
+    margin: 0;
+    background-color: @grey-bg;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form {
+    width: 1150px;
+    padding: 0;
+    padding-top: 129px;
+  }
+
+  .form__description {
+    width: 672px;
+    margin-bottom: 29px;
+    margin-left: 225px;
+  }
+
+  .form__form {
+    font-size: 19px;
+  }
+
+  .fieldset {
+    display: flex;
+
+    padding: 50px;
+    padding-left: 112px;
+    padding-right: 199px;
+  }
+
+  .form__legend {
+    margin-right: 55px;
+  }
+
+  .form__list {
+    width: 726px;
+  }
 }
