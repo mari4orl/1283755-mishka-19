@@ -12,8 +12,17 @@
   font-size: 19px;
 }
 
+.categories__item--interior {
+  background-color: @green-light;
+}
+
+.categories__item--toys {
+  background-color: @green-dark;
+}
+
 .categories__link {
   color: @white;
+  text-decoration: none;
 
   padding-left: 29px;
   padding-right: 27px;
@@ -22,6 +31,8 @@
 
   display: flex;
   justify-content: space-between;
+
+  position: relative;
 
   &--interior {
     background-color: @green-light;
@@ -38,6 +49,16 @@
   }
 }
 
+.categories__link:hover,
+.categories__link:focus {
+  top: -5px;
+}
+
+.categories__link:focus .categories__text {
+  opacity: 0.3;
+}
+
+
 .categories__item path {
   fill: #149080;
   fill-opacity: 0.5;
@@ -51,7 +72,6 @@
     margin-bottom: 55px;
 
     font-size: 20px;
-
   }
 
   .categories__link {
@@ -86,14 +106,7 @@
 
   .categories__link {
     padding-left: 36px;
-    height: 119px;
     padding-top: 30px;
     width: 525px;
-
-    &--interior:hover,
-    &--toys:hover {
-      padding-bottom: 32px;
-      height: 124px;
-    }
   }
 }
