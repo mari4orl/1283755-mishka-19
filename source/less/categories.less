@@ -1,4 +1,4 @@
-.categories {
+.categories__list {
   .list-reset();
   .container();
   padding: 0;
@@ -66,6 +66,16 @@
 
 @media (min-width: @tablet-width) {
   .categories {
+    background-color: #f9f9f9;
+    background-image: url("../img/bg-zigzag-fill.svg");
+    background-repeat: repeat-x;
+    background-size: auto 24px;
+    background-position-y: bottom;
+
+    z-index: 2;
+  }
+
+  .categories__list {
     display: flex;
     flex-direction: row;
     width: 668px;
@@ -98,6 +108,10 @@
 
 @media (min-width: @desktop-width) {
   .categories {
+    background-size: auto 34px;
+  }
+
+  .categories__list {
     display: flex;
     flex-direction: row;
     width: 1050px;

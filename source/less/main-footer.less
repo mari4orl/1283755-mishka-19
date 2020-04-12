@@ -1,7 +1,9 @@
 .main-footer {
-  .container();
-
   background-color: @grey-bg;
+}
+
+.main-footer__inner {
+  .container();
 
   line-height: 0;
 }
@@ -10,8 +12,16 @@
   display: none;
 }
 
+.main-footer__logo:hover path {
+  fill: #46c1ae;
+}
+
+.main-footer__logo:focus path {
+  fill-opacity: 0.3;
+}
+
 @media (min-width: @tablet-width) {
-  .main-footer {
+  .main-footer__inner {
     width: 772px;
     padding: 0;
   }
@@ -31,7 +41,7 @@
 }
 
 @media (min-width: @desktop-width) {
-  .main-footer {
+  .main-footer__inner {
     width: 1150px;
   }
 }

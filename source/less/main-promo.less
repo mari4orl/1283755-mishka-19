@@ -1,13 +1,15 @@
 .main-promo {
-  .container();
+  background-color: #f9f9f9;
+}
 
-  background-color: @grey-bg;
+.main-promo__inner {
+  .container();
 
   text-align: center;
   min-height: 177px;
 
   padding: 39px;
-  padding-top: 65px;
+  padding-top: 70px;
 }
 
 .main-promo--bg {
@@ -19,15 +21,19 @@
 }
 
 @media (min-width: @tablet-width) {
-  .main-promo {
+  .main-promo__inner {
     width: 768px;
 
-    padding-top: 161px;
+    padding-top: 120px;
     min-height: 226px;
   }
 
   .main-promo--grey {
-    padding-top: 106px;
+    background-color: @grey-bg;
+  }
+
+  .main-promo--inner-page {
+    padding-top: 50px;
   }
 
   .main-promo--bg {
@@ -40,15 +46,12 @@
 }
 
 @media (min-width: @desktop-width) {
-  .main-promo {
+  .main-promo__inner {
     width: 1150px;
-
-    padding-top: 161px;
-    min-height: 255px;
   }
 
   .main-promo--grey {
-    padding-top: 106px;
+    padding-top: 50px;
   }
 
   .main-promo--bg {
