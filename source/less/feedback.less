@@ -1,0 +1,176 @@
+.feedback {
+  padding-bottom: 95px;
+
+  background-image: url("../img/bg-zigzag-line.svg");
+  background-repeat: repeat-x;
+  background-size: auto 6px;
+  background-position-y: 630px;
+}
+
+.feedback__inner {
+  .container();
+
+  padding: 0 30px;
+}
+
+.feedback__list {
+  .list-reset();
+  margin-top: 35px;
+}
+
+.feedback__blockquote {
+  margin: 0;
+}
+
+.feedback__text {
+  margin: 0;
+  margin-bottom: 38px;
+
+  color: @gray-text;
+  line-height: 30px;
+}
+
+.feedback__author-name {
+  font-weight: bold;
+  font-style: normal;
+  font-size: 17px;
+}
+
+.feedback__author-site {
+  font-style: normal;
+  font-size: 17px;
+  color: @gray-text;
+}
+
+.feedback__btn-back,
+.feedback__btn-forward {
+  display: inline-block;
+
+  width: 129px;
+  height: 52px;
+  margin: 28px 0;
+  padding: 0;
+  padding-top: 7px;
+  outline: none;
+  background-color: #ffffff;
+  border: 1px #ececec solid;
+
+  cursor: pointer;
+
+  &:hover polygon {
+    fill-opacity: 0.6;
+  }
+
+  &:focus polygon {
+    fill-opacity: 0.3;
+  }
+}
+
+.feedback__btn-forward {
+  margin-left: -6px;
+}
+
+.feedback__btn {
+  width: 100%;
+
+  font-size: 18px;
+  padding: 15px 10px 16px;
+}
+
+@media (min-width: @tablet-width) {
+  .feedback {
+    padding-bottom: 131px;
+
+    background-image: url("../img/bg-zigzag-line.svg");
+    background-repeat: repeat-x;
+    background-size: auto 15px;
+    background-position-y: 510px;
+  }
+
+  .feedback__inner {
+    width: 772px;
+
+    position: relative;
+
+    padding: 0 50px;
+    padding-top: 70px;
+    padding-bottom: 60px;
+
+    background-image: url("../img/review@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: left top;
+  }
+
+  .feedback__text {
+    margin-bottom: 60px;
+
+    font-size: 17px;
+  }
+
+  .feedback__author {
+    width: 254px;
+  }
+
+  .feedback__btn-wrapper {
+    position: absolute;
+    bottom: 62px;
+    right: 71px;
+  }
+
+  .feedback__btn-back,
+  .feedback__btn-forward {
+    border: none;
+    width: 68.5px;
+    padding: 0;
+    margin: 0;
+  }
+
+  .feedback__btn-back {
+    text-align: left;
+  }
+
+  .feedback__btn-forward {
+    text-align: right;
+    margin-left: -4px;
+  }
+
+  .feedback__btn {
+    position: absolute;
+    width: 175px;
+    top: 79px;
+    right: 52px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .feedback {
+    padding-bottom: 161px;
+
+    background-image: url("../img/bg-zigzag-line.svg");
+    background-repeat: repeat-x;
+    background-size: auto 21px;
+    background-position-y: 520px;
+  }
+
+  .feedback__inner {
+    width: 1150px;
+
+    position: relative;
+
+    padding: 0 50px;
+    padding-left: 224px;
+    padding-top: 70px;
+    padding-bottom: 102px;
+
+
+    background-position: top left 50px;
+  }
+
+  .feedback__text {
+    margin-bottom: 45px;
+  }
+
+  .feedback__btn-wrapper {
+    bottom: 111px;
+  }
+}
