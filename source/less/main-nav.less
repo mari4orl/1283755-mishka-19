@@ -142,7 +142,12 @@
 
     &--logo {
       display: block;
+      border: none;
     }
+  }
+
+  .main-nav--closed {
+    border-bottom: #e7e7e7 solid 1px;
   }
 
   .main-nav--nojs .main-nav__toggle {
@@ -161,7 +166,7 @@
   }
 
   .main-nav::after {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     z-index: 0;
@@ -200,7 +205,6 @@
 
     background-color: white;
     height: 88px;
-    border-bottom: 1px solid #e7e7e7;
     box-sizing: border-box;
   }
 
@@ -229,7 +233,6 @@
     background-color: @white;
     width: 100%;
     height: 88px;
-    border-bottom: 1px solid #e7e7e7;
   }
 
   .main-nav__link {
@@ -296,7 +299,7 @@
   }
 
   .main-nav::after {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     z-index: 0;
@@ -376,5 +379,4 @@
     margin-left: auto;
     padding-right: 51px;
   }
-
 }
