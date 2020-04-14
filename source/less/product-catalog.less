@@ -12,7 +12,7 @@
   margin-bottom: 30px;
 }
 
-.product-catalog__item--video {
+.product-catalog__item-video {
   border: 1px solid @grey-border;
 
   position: relative;
@@ -158,7 +158,7 @@
     font-size: 17px;
   }
 
-  .product-catalog__item--video {
+  .product-catalog__item-video {
     display: flex;
     flex-direction: column;
 
@@ -226,7 +226,18 @@
     margin-top: -10px;
   }
 
-  .product-catalog__item--video {
+  .product-catalog__item-video {
     margin-bottom: 105px;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+    height: 455px;
+  }
+
+  .product-catalog__img {
+    flex-basis: 100%;
+  }
+
+  .product-catalog__video-wrapper {
+    flex-basis: 280px;
   }
 }
