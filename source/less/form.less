@@ -1,5 +1,6 @@
 .form {
   .container();
+  padding: 0 30px;
   padding-top: 29px;
   padding-bottom: 55px;
 }
@@ -20,12 +21,33 @@
   font-weight: bold;
 }
 
+.fieldset {
+  position: relative;
+}
+
 .form__legend {
   color: @green-light;
   text-transform: uppercase;
   font-size: 17px;
 
   padding: 0;
+
+  &::after {
+    content: "";
+
+    width: 198px;
+    height: 1px;
+
+    background-color: @green-light;
+
+    position: absolute;
+    top: 8px;
+    right: 0;
+  }
+}
+
+.form__email-legend::after {
+  width: 179px;
 }
 
 .form__list {
@@ -33,10 +55,16 @@
 }
 
 .form__radio-legend {
-  margin-bottom: 38px;
+  margin-bottom: 27px;
 }
 
 .form__radio-item {
+  position: relative;
+
+  padding-left: 62px;
+  padding-top: 11px;
+
+
   &:first-child {
     margin-bottom: 20px;
   }
@@ -46,12 +74,36 @@
   }
 }
 
+.form__radio-label {
+  cursor: pointer;
+}
+
+.form__radio + .form__radio-indicator {
+  width: 40px;
+  height: 40px;
+  border: 2px solid #444444;
+  border-radius: 50%;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.form__radio:checked + .form__radio-indicator {
+  background-color: #62d1ba;
+
+}
+
 .form__checkbox-legend {
   margin-bottom: 35px;
 }
 
 .form__checkbox-item {
   margin-bottom: 43px;
+}
+
+.form__checkbox + .form__checkbox-indicator {
+
 }
 
 .form__personal-legend {
