@@ -1,9 +1,17 @@
-.copyright {
+.copyright__link {
   display: flex;
   justify-content: center;
   align-items: center;
+
   padding-top: 22px;
   padding-bottom: 23px;
+
+  text-decoration: none;
+  color: @black;
+
+  &:focus {
+    opacity: 0.3;
+  }
 }
 
 .copyright__text {
@@ -11,12 +19,16 @@
   margin-right: 30px;
 }
 
-.copyright__link path {
+.copyright__icon {
   fill: @green-light;
 }
 
+.copyright__link:hover .copyright__icon {
+  fill: #46c1ae;
+}
+
 @media (min-width: @tablet-width) {
-  .copyright {
+  .copyright__link {
     padding: 0;
   }
 }
