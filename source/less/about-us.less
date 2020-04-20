@@ -31,6 +31,8 @@
 .about-us__pic {
   margin: 0;
   height: 55px;
+
+  fill: @green-light;
 }
 
 .about-us__pic svg {
@@ -40,10 +42,6 @@
 
 .about-us__item p {
   margin: 0;
-}
-
-.about-us__item path {
-  fill: @green-light;
 }
 
 @media (min-width: @tablet-width) {
@@ -63,7 +61,7 @@
     margin-bottom: 47px;
   }
 
-  .about-us__list {
+  .about-us__list-wrapper {
     display: flex;
     flex-wrap: wrap;
 
@@ -72,10 +70,12 @@
     justify-content: space-between;
   }
 
+  .about-us__list {
+    flex-basis: 50%;
+  }
+
   .about-us__item {
     margin-bottom: 60px;
-
-    flex-basis: 50%;
   }
 
   .about-us__pic {
