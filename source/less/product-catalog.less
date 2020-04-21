@@ -58,12 +58,34 @@
   border-top: 1px solid @grey-border;
 }
 
+.product-catalog__link {
+  text-decoration: none;
+  color: @black;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:focus {
+    opacity: 0.3;
+  }
+}
+
 .product-catalog__cost {
   line-height: 15px;
 }
 
 .product-catalog__cart-icon {
   fill-opacity: 0.2;
+}
+
+.product-catalog__cart:hover .product-catalog__cart-icon {
+  fill-opacity: 1;
+  fill: @green-light;
+}
+
+.product-catalog__cart:focus .product-catalog__cart-icon {
+  fill-opacity: 0.3;
 }
 
 .video__description {

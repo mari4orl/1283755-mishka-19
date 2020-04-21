@@ -129,13 +129,17 @@
       <section class="product-catalog">
         <ul class="product-catalog__list">
           <li class="product-catalog__item">
-            <picture>
-              <source media="(min-width: 1150px)" srcset="img/photo-hare-desktop@1x.jpg 1x, img/photo-hare-desktop@2x.jpg 2x">
-              <source media="(min-width: 768px)" srcset="img/photo-hare-tablet@1x.jpg 1x, img/photo-hare-tablet@2x.jpg 2x">
-              <img class="product-catalog__rabbit-img" src="img/photo-hare-mobile@1x.jpg" srcset="img/photo-hare-mobile@2x.jpg 2x" alt="Вязанный зайчик">
-            </picture>
+            <a href="#">
+              <picture>
+                <source media="(min-width: 1150px)" srcset="img/photo-hare-desktop@1x.jpg 1x, img/photo-hare-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-hare-tablet@1x.jpg 1x, img/photo-hare-tablet@2x.jpg 2x">
+                <img class="product-catalog__rabbit-img" src="img/photo-hare-mobile@1x.jpg" srcset="img/photo-hare-mobile@2x.jpg 2x" alt="Вязанный зайчик">
+              </picture>
+            </a>
             <div class="product-catalog__description-wrapper">
-              <h3 class="product-catalog__name h3">Зайчик-попрыгайчик</h3>
+              <a class="product-catalog__link" href="#">
+                <h3 class="product-catalog__name h3">Зайчик-попрыгайчик</h3>
+              </a>
               <p class="product-catalog__description">Рост 30 см, вес 200 г</p>
               <div class="product-catalog__bottom">
                 <b class="product-catalog__cost">1 200 руб.</b>
@@ -148,13 +152,17 @@
             </div>
           </li>
           <li class="product-catalog__item">
-            <picture>
-              <source media="(min-width: 1150px)" srcset="img/photo-bowl-desktop@1x.jpg 1x, img/photo-bowl-desktop@2x.jpg 2x">
-              <source media="(min-width: 768px)" srcset="img/photo-bowl-tablet@1x.jpg 1x, img/photo-bowl-tablet@2x.jpg 2x">
-              <img class="product-catalog__linen-busket-img" src="img/photo-bowl-mobile@1x.jpg" srcset="img/photo-bowl-mobile@2x.jpg 2x" alt="Вязанная корзинка">
-            </picture>
+            <a href="#">
+              <picture>
+                <source media="(min-width: 1150px)" srcset="img/photo-bowl-desktop@1x.jpg 1x, img/photo-bowl-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-bowl-tablet@1x.jpg 1x, img/photo-bowl-tablet@2x.jpg 2x">
+                <img class="product-catalog__linen-busket-img" src="img/photo-bowl-mobile@1x.jpg" srcset="img/photo-bowl-mobile@2x.jpg 2x" alt="Вязанная корзинка">
+              </picture>
+            </a>
             <div class="product-catalog__description-wrapper">
-              <h3 class="product-catalog__name h3">Корзинка для белья</h3>
+              <a class="product-catalog__link" href="#">
+                <h3 class="product-catalog__name h3">Корзинка для белья</h3>
+              </a>
               <p class="product-catalog__description">Диаметр 15 см, высота 10 см</p>
               <div class="product-catalog__bottom">
                 <b class="product-catalog__cost">690 руб.</b>
@@ -167,13 +175,17 @@
             </div>
           </li>
           <li class="product-catalog__item">
-            <picture>
-              <source media="(min-width: 1150px)" srcset="img/photo-toys-desktop@1x.jpg 1x, img/photo-toys-desktop@2x.jpg 2x">
-              <source media="(min-width: 768px)" srcset="img/photo-toys-tablet@1x.jpg 1x, img/photo-toys-tablet@2x.jpg 2x">
-              <img class="product-catalog__toys-img" src="img/photo-toys-mobile@1x.jpg" srcset="img/photo-toys-mobile@2x.jpg 2x" alt="Вязанная корзинка большая">
-            </picture>
+            <a href="#">
+              <picture>
+                <source media="(min-width: 1150px)" srcset="img/photo-toys-desktop@1x.jpg 1x, img/photo-toys-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-toys-tablet@1x.jpg 1x, img/photo-toys-tablet@2x.jpg 2x">
+                <img class="product-catalog__toys-img" src="img/photo-toys-mobile@1x.jpg" srcset="img/photo-toys-mobile@2x.jpg 2x" alt="Вязанная корзинка большая">
+              </picture>
+            </a>
             <div class="product-catalog__description-wrapper">
-              <h3 class="product-catalog__name h3">Большая корзинка <br> для игрушек</h3>
+              <a class="product-catalog__link" href="#">
+                <h3 class="product-catalog__name h3">Большая корзинка <br> для игрушек</h3>
+              </a>
               <p class="product-catalog__description">Диаметр 30 см, высота 30 см</p>
               <div class="product-catalog__bottom">
                 <b class="product-catalog__cost">1 500 руб.</b>
@@ -255,7 +267,33 @@
         </div>
       </div>
     </footer>
-
+    <section class="modal">
+      <div class="modal__overlay"></div>
+      <div class="modal__content">
+        <h2 class="h2 modal__title">
+          Добавить в корзину
+        </h2>
+        <p class="modal__text">
+          Выберите размер:
+        </p>
+        <form class="modal__form" action="https://echo.htmlacademy.ru" method="post">
+          <ul class="modal__list">
+            <li class="modal__item">
+              <label><input class="modal__radio visually-hidden" type="radio" name="type" value="small" checked>
+              <span class="modal__radio-indicator">S</span></label>
+            </li>
+            <li class="modal__item">
+              <label><input class="modal__radio visually-hidden" type="radio" name="type" value="medium">
+              <span class="modal__radio-indicator">M</span></label>
+            </li>
+            <li class="modal__item">
+              <label><input class="modal__radio visually-hidden" type="radio" name="type" value="large">
+              <span class="modal__radio-indicator">L</span></label>
+            </li>
+          </ul>
+        <button class="modal__add" type="button" name="button">Добавить</button>
+      </div>
+    </section>
     <script src="js/main-nav.js"></script>
   </body>
 </html>
