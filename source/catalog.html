@@ -58,7 +58,7 @@
               <a class="main-nav__link main-nav__link--new" href="#">Новые поступления</a>
             </li>
             <li class="main-nav__item--sale">
-              <a class="main-nav__link" href="#">Распродажа</a>
+              <a class="main-nav__link main-nav__link--sale" href="#">Распродажа</a>
             </li>
             <li class="main-nav__item--shipping main-nav--gray">
               Бесплатная доставка по России
@@ -69,8 +69,8 @@
     </header>
 
     <main class="catalog-main">
-      <section class="main-promo main-promo--grey">
-        <div class="main-promo__inner main-promo--inner-page">
+      <section class="main-promo main-promo--grey main-promo--inner-gray">
+        <div class="main-promo__inner main-promo--inner-page main-promo--inner-gray">
           <h1 class="h1">Каталог товаров</h1>
         </div>
         <hr class="main-promo__wave">
@@ -160,26 +160,24 @@
             </div>
           </li>
           <li class="product-catalog__item-video">
-            <div class="product-catalog__video-wrapper product-catalog__video-header">
-              <svg class="product-catalog__camera-img" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="32px" height="22px" enable-background="new 0 0 32 32" xml:space="preserve">
+            <div class="product-catalog__img">
+              <picture>
+                <source type="image/webp" media="(min-width: 1150px)" srcset="img/video-desktop@1x.webp 1x, img/video-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 772px)" srcset="img/video-tablet@1x.webp 1x, img/video-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/video-mobile@1x.webp 1x, img/video-mobile@2x.webp 2x">
+
+                <source media="(min-width: 1150px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
+                <img src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x" alt="Видео процесс производства">
+              </picture>
+              <div class="product-catalog__play"></div>
+            </div>
+            <div class="product-catalog__video-wrapper">
+              <svg class="product-catalog__camera-img" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="32px" height="32px" enable-background="new 0 0 32 32" xml:space="preserve">
                 <use xlink:href="#icon-video"></use>
               </svg>
-              <h3 class="video__title h3">Процесс производства</h3>
-            </div>
-            <picture class="product-catalog__img">
-              <source type="image/webp" media="(min-width: 1150px)" srcset="img/video-desktop@1x.webp 1x, img/video-desktop@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 772px)" srcset="img/video-tablet@1x.webp 1x, img/video-tablet@2x.webp 2x">
-              <source type="image/webp" srcset="img/video-mobile@1x.webp 1x, img/video-mobile@2x.webp 2x">
-
-              <source media="(min-width: 1150px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
-              <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
-              <img src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x" alt="Видео процесс производства">
-            </picture>
-            <svg class="product-catalog__play" version="1.1" id="Laag_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100.678px" height="76.891px" enable-background="new 247.3 382.56 100.678 76.891" xml:space="preserve">
-              <use xlink:href="#icon-play"></use>
-            </svg>
-            <div class="product-catalog__video-wrapper">
-              <p class="video__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+              <h3 class="product-catalog__video-title h3">Процесс производства</h3>
+              <p class="product-catalog__video-description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
               <a href="#" class="make-order btn">Сделать заказ</a>
             </div>
           </li>
@@ -229,7 +227,7 @@
         </div>
       </div>
     </footer>
-    <section class="modal">
+    <section class="modal modal--closed">
       <div class="modal__overlay"></div>
       <div class="modal__content">
         <h2 class="h2 modal__title">
@@ -257,5 +255,6 @@
       </form></div>
     </section>
     <script src="js/main-nav.js"></script>
+    <script src="js/modal.js"></script>
   </body>
 </html>

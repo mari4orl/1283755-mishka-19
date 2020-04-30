@@ -27,21 +27,34 @@
   }
 
   .main-footer__wrapper {
-    display: flex;
     padding: 0 51px;
     padding-top: 51px;
     padding-bottom: 57px;
-    justify-content: space-between;
-    align-items: center;
+
+    display: flex;
+    align-items: flex-start;
   }
 
   .main-footer__logo {
     display: block;
+  }
+
+  .main-footer__copyright {
+    margin-left: auto;
+    margin-top: 5px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .main-footer__inner {
     width: 1150px;
+  }
+
+  .main-footer__wrapper {
+    padding-top: 49px;
+  }
+
+  .main-footer__social {
+    margin-left: auto;
   }
 }
