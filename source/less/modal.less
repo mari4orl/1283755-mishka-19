@@ -2,10 +2,6 @@
   display: none;
 }
 
-.modal--opened {
-  display: block;
-}
-
 .modal__overlay {
   position: fixed;
   top: 0;
@@ -84,14 +80,19 @@
 .modal__add {
   width: 100%;
   border: none;
+  padding-top: 18px;
+  padding-bottom: 14px;
   background-color: @green-light;
+  border: 2px solid @green-light;
+  box-sizing: border-box;
 
   font-size: 17px;
   color: @white;
   font-weight: bold;
   text-transform: uppercase;
-  padding-top: 18px;
-  padding-bottom: 14px;
+
+  cursor: pointer;
+  outline: none;
 }
 
 @media (min-width: @tablet-width) {
@@ -114,5 +115,19 @@
 
   .modal__radio-indicator {
     width: 112px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .modal__add {
+    &:hover {
+      background-color: @white;
+      color: @green-light;
+      border: 2px solid #cfcfcf;
+    }
+
+    &:focus {
+      border: 2px solid #ededed;
+    }
   }
 }

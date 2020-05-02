@@ -8,7 +8,7 @@
 .form__description {
   font-size: 13px;
   line-height: 24px;
-  color: @grey-text;
+  color: @gray-text;
 
   margin: 0;
   margin-bottom: 22px;
@@ -190,18 +190,13 @@
 .form__email,
 .form__personal,
 .form__bonus {
-  color: @gray-text;
-  font-size: 19px;
-
   &::placeholder {
-    color: @grey-form;
+    color: @gray-form;
     font-size: 17px;
   }
 
-  &:hover,
-  &:focus {
-    border-color: @green-light;
-  }
+  color: @gray-text;
+  font-size: 19px;
 }
 
 .form__tel-icon,
@@ -211,11 +206,6 @@
   top: 35px;
 
   fill: #cccccc;
-}
-
-.form__tel:hover + .form__tel-icon,
-.form__email:hover + .form__email-icon, {
-  fill: @green-light;
 }
 
 .form__bonus {
@@ -230,7 +220,7 @@
 .form__notice {
   font-size: 14px;
   font-weight: normal;
-  color: @grey-text;
+  color: @gray-text;
 
   margin-bottom: 30px;
 }
@@ -305,7 +295,7 @@
   .form__checkbox-field,
   .form__tel-field,
   .form__email-field {
-    background-color: @grey-bg;
+    background-color: @gray-bg;
   }
 
   .form__checkbox-list {
@@ -381,7 +371,7 @@
     padding-top: 17px;
     padding-bottom: 13px;
     padding-left: 17px;
-    background-color: @grey-bg;
+    background-color: @gray-bg;
 
     width: 501px;
 
@@ -392,7 +382,7 @@
 
   .form__email {
     margin: 0;
-    background-color: @grey-bg;
+    background-color: @gray-bg;
     padding-left: 17px;
     box-sizing: border-box;
 
@@ -543,6 +533,16 @@
     width: 700px;
   }
 
+  .form__tel,
+  .form__email,
+  .form__personal,
+  .form__bonus {
+    &:hover,
+    &:focus {
+      border-color: @green-light;
+    }
+  }
+
   .form__tel-icon {
     right: 232px;
     top: 62px;
@@ -551,6 +551,13 @@
   .form__email-icon {
     right: 228px;
     top: 15px;
+  }
+
+  .form__tel:hover + .form__tel-icon,
+  .form__email:hover + .form__email-icon,
+  .form__tel:focus + .form__tel-icon,
+  .form__email:focus + .form__email-icon {
+    fill: @green-light;
   }
 
   .form__bonus-label {
