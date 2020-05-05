@@ -20,7 +20,7 @@ for (var i = 0; i < cartIcon.length; i++) {
 addBtn.addEventListener('click', closeModal);
 overlay.addEventListener('click', closeModal);
 document.addEventListener('keydown', function (e) {
-  if(e.target.keyCode === 27) {
+  if(e.keyCode === 27) {
     modal.classList.add('modal--closed');
   }
 });

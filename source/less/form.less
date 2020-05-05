@@ -21,10 +21,6 @@
   font-weight: bold;
 }
 
-.fieldset {
-  position: relative;
-}
-
 .form__container {
   position: relative;
 }
@@ -103,16 +99,26 @@
   left: 0;
 }
 
-.form__radio:checked + .form__radio-indicator {
-  background-color: #62d1ba;
+.form__radio {
+  &:checked + .form__radio-indicator {
+    background-color: #62d1ba;
+  }
+
+  &:disabled + .form__radio-indicator {
+    background-color: transparent;
+    box-shadow: 0 0 0 2px @gray-light;
+    cursor: auto;
+  }
 }
 
-.form__radio-item:hover .form__radio-indicator {
-  box-shadow: 0 0 0 2px #62d1ba;
-}
+.form__radio-item {
+  &:hover .form__radio-indicator {
+    box-shadow: 0 0 0 2px #62d1ba;
+  }
 
-.form__radio-item:active .form__radio-indicator {
-  box-shadow: 0 0 0 2px #c8c8c8;
+  &:active .form__radio-indicator {
+    box-shadow: 0 0 0 2px #c8c8c8;
+  }
 }
 
 .form__checkbox-legend {
@@ -141,19 +147,30 @@
   left: 0;
 }
 
-.form__checkbox:checked + .form__checkbox-indicator {
-  background-image: url("../img/icon-tick.svg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 22px 16px;
+.form__checkbox {
+  &:checked + .form__checkbox-indicator {
+    background-image: url("../img/icon-tick.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 22px 16px;
+  }
+
+  &:disabled + .form__checkbox-indicator {
+    border: 2px solid @gray-light;
+    cursor: auto;
+  }
 }
 
-.form__checkbox-item:hover .form__checkbox-indicator {
-  border-color: #62d1ba;
+.form__checkbox-item {
+  &:hover .form__checkbox-indicator {
+    border-color: #62d1ba;
+  }
 }
 
-.form__checkbox-item:active .form__checkbox-indicator {
-  border-color: #c8c8c8;
+.form__checkbox-item {
+  &:active .form__checkbox-indicator {
+    border-color: #c8c8c8;
+  }
 }
 
 .form__personal-legend {
@@ -317,8 +334,10 @@
     height: 49px;
   }
 
-  .form__checkbox:checked + .form__checkbox-indicator {
-    background-size: 33px 22px;
+  .form__checkbox {
+    &:checked + .form__checkbox-indicator {
+      background-size: 33px 22px;
+    }
   }
 
   .form__personal-legend {
@@ -571,6 +590,7 @@
   .form__btn {
     margin-left: 113px;
     padding-top: 15px;
+    margin-bottom: 48px;
   }
 
   .form__notice {

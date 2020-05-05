@@ -72,19 +72,19 @@
   background-color: @white;
   cursor: pointer;
   outline: none;
+
+  &:hover .product-catalog__cart-icon {
+    fill-opacity: 1;
+    fill: @green-light;
+  }
+
+  &:focus .product-catalog__cart-icon {
+    fill-opacity: 0.3;
+  }
 }
 
 .product-catalog__cart-icon {
   fill-opacity: 0.2;
-}
-
-.product-catalog__cart:hover .product-catalog__cart-icon {
-  fill-opacity: 1;
-  fill: @green-light;
-}
-
-.product-catalog__cart:focus .product-catalog__cart-icon {
-  fill-opacity: 0.3;
 }
 
 .product-catalog__item-video {

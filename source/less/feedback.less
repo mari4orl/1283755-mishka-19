@@ -97,12 +97,15 @@
     background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
     background-position: left top;
+  }
+
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-      background-image: url("../img/review@2x.jpg");
-      background-size: 350px 457px;
+      .feedback__inner {
+        background-image: url("../img/review@2x.jpg");
+        background-size: 350px 457px;
+      }
     }
-  }
 
   .feedback__list {
     margin-left: 3px;
@@ -186,6 +189,7 @@
 
   .feedback__text {
     margin-bottom: 39px;
+    width: 771px;
   }
 
   .feedback__author-name {
@@ -193,7 +197,7 @@
   }
 
   .feedback__btn-wrapper {
-    bottom: 100px;
+    bottom: 98px;
   }
 
   .feedback__btn-back,

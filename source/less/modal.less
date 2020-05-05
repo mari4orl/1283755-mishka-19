@@ -73,8 +73,10 @@
   }
 }
 
-.modal__radio:checked + .modal__radio-indicator {
-  border: 2px solid @green-light;
+.modal__radio {
+  &:checked + .modal__radio-indicator {
+    border: 2px solid @green-light;
+  }
 }
 
 .modal__add {

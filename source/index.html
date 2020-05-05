@@ -5,6 +5,7 @@
     <title>HTML Academy: Мишка</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link href="css/style.min.css" rel="stylesheet">
+    <script src="js/picturefill.min.js"></script>
   </head>
   <body>
     <div style="display:none">
@@ -25,7 +26,7 @@
                 <picture>
                   <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
                   <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-                  <img src="img/logo-mobile.svg">
+                  <img src="img/logo-mobile.svg" alt="Логотип сайта Мишка">
                 </picture>
               </a>
             </li>
@@ -39,7 +40,7 @@
           <ul class="main-nav__list main-nav__list--user">
             <li class="main-nav__item main-nav__item--search">
               <a class="main-nav__link main-nav__link--search" href="#">
-                <svg class="main-nav__search-img" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.6px" height="17.6px" enable-background="new -0.8 -0.8 17.6 17.6" xml:space="preserve">
+                <svg class="main-nav__search-img" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.6px" height="17.6px" enable-background="new -0.8 -0.8 17.6 17.6" xml:space="preserve">
                   <use xlink:href="#icon-search"></use>
                 </svg>
                 <span class="main-nav__search-text">Поиск по сайту</span>
@@ -47,20 +48,20 @@
             </li>
             <li class="main-nav__item main-nav__item--cart">
               <a class="main-nav__link main-nav__link--cart" href="#">
-                <svg class="main-nav__cart-img" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20.294px" height="18.849px" enable-background="new 264.205 370.961 20.294 18.849" xml:space="preserve">
+                <svg class="main-nav__cart-img" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20.294px" height="18.849px" enable-background="new 264.205 370.961 20.294 18.849" xml:space="preserve">
                   <use xlink:href="#icon-cart"></use>
                 </svg>
                 Корзина: пока пуста</a>
             </li>
           </ul>
           <ul class="main-nav__list main-nav__list--secondary">
-            <li class="main-nav__item--new">
+            <li class="main-nav__item main-nav__item--new">
               <a class="main-nav__link main-nav__link--new" href="#">Новые поступления</a>
             </li>
-            <li class="main-nav__item--sale">
+            <li class="main-nav__item main-nav__item--sale">
               <a class="main-nav__link main-nav__link--sale" href="#">Распродажа</a>
             </li>
-            <li class="main-nav__item--shipping">
+            <li class="main-nav__item main-nav__item--shipping">
               Бесплатная доставка по России
             </li>
           </ul>
@@ -86,7 +87,7 @@
             <li class="main-promo__item main-promo__item--toys">
               <a class="main-promo__link main-promo__link--toys" href="#">
                 <span class="main-promo__text main-promo__text--toys">Детские <br>игрушки</span>
-                <svg class="main-promo__icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="60px" height="59.62px" enable-background="new 226.001 226.19 60 59.62" xml:space="preserve">
+                <svg class="main-promo__icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="60px" height="59.62px" enable-background="new 226.001 226.19 60 59.62" xml:space="preserve">
                   <use xlink:href="#icon-toy"></use>
                 </svg>
               </a>
@@ -107,16 +108,16 @@
               Доступны в шести <br> расцветках и трех размерах.</p>
             <table class="weekly-product__details">
             <tr class="weekly-product__row">
-              <td class="weekly-product__col weekly-product__col1">Цвет:</td>
-              <td class="weekly-product__col weekly-product__col2">«Тиффани»/серый</td>
+              <td class="weekly-product__col weekly-product__col--1">Цвет:</td>
+              <td class="weekly-product__col weekly-product__col--2">«Тиффани»/серый</td>
             </tr>
             <tr class="weekly-product__row">
-              <td class="weekly-product__col weekly-product__col1">Диаметр:</td>
-              <td class="weekly-product__col weekly-product__col2">25 см</td>
+              <td class="weekly-product__col weekly-product__col--1">Диаметр:</td>
+              <td class="weekly-product__col weekly-product__col--2">25 см</td>
             </tr>
             <tr class="weekly-product__row">
-              <td class="weekly-product__col weekly-product__col1">Высота:</td>
-              <td class="weekly-product__col weekly-product__col2">15 см</td>
+              <td class="weekly-product__col weekly-product__col--1">Высота:</td>
+              <td class="weekly-product__col weekly-product__col--2">15 см</td>
             </tr>
           </table>
           </div>
@@ -157,7 +158,7 @@
               </li>
 
               <li class="about-us__item">
-                <svg class="about-us__heart" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="33.05px" height="27.857px" enable-background="new 47.475 50.071 33.05 27.857" xml:space="preserve">
+                <svg class="about-us__heart" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="33.05px" height="27.857px" enable-background="new 47.475 50.071 33.05 27.857" xml:space="preserve">
                   <use xlink:href="#icon-feature-heart"></use>
                 </svg>
                 <p class="about-us__text">Увеличивает лайки<br> на фотографиях</p>
@@ -166,21 +167,21 @@
 
             <ul class="about-us__list">
               <li class="about-us__item">
-                <svg class="about-us__ball" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="34.373px" height="34.373px" enable-background="new 0 0 34.373 34.373" xml:space="preserve">
+                <svg class="about-us__ball" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="34.373px" height="34.373px" enable-background="new 0 0 34.373 34.373" xml:space="preserve">
                   <use xlink:href="#icon-feature-ball"></use>
                 </svg>
                 <p class="about-us__text">Связано вручную с <br> любовью и умилением</p>
               </li>
 
               <li class="about-us__item">
-                <svg class="about-us__rocket" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="54.156px" height="23.183px" enable-background="new 612.532 500.386 54.156 23.183" xml:space="preserve">
+                <svg class="about-us__rocket" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="54.156px" height="23.183px" enable-background="new 612.532 500.386 54.156 23.183" xml:space="preserve">
                   <use xlink:href="#icon-feature-rocket"></use>
                 </svg>
                 <p class="about-us__text">Поддержка отечественного производителя</p>
               </li>
 
               <li class="about-us__item">
-                <svg class="about-us__gift" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="32.666px" height="32.486px" enable-background="new 239.665 239.757 32.666 32.486" xml:space="preserve">
+                <svg class="about-us__gift" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="32.666px" height="32.486px" enable-background="new 239.665 239.757 32.666 32.486" xml:space="preserve">
                   <use xlink:href="#icon-feature-gift"></use>
                 </svg>
                 <p class="about-us__text">Поставляется в <br> подарочной упаковке</p>
@@ -206,12 +207,12 @@
           </ul>
           <div class="feedback__btn-wrapper">
             <button class="feedback__btn-back">
-              <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50px" height="26.003px" enable-background="new 0 0 50 26.003" xml:space="preserve">
+              <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50px" height="26.003px" enable-background="new 0 0 50 26.003" xml:space="preserve">
                 <use xlink:href="#icon-left-arrow"></use>
               </svg>
             </button>
             <button class="feedback__btn-forward">
-              <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50px" height="26.003px" enable-background="new 0 0 50 26.003" xml:space="preserve">
+              <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50px" height="26.003px" enable-background="new 0 0 50 26.003" xml:space="preserve">
                 <use xlink:href="#icon-right-arrow"></use>
               </svg>
             </button>
@@ -223,18 +224,18 @@
       <section class="contacts">
         <div class="contacts__wrapper">
           <h2 class="contacts__title">Контакты</h2>
-          <svg class="contacts__flag" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="46.68px" height="81.691px" enable-background="new -11.34 -28.346 46.68 81.691" xml:space="preserve">
+          <svg class="contacts__flag" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="46.68px" height="81.691px" enable-background="new -11.34 -28.346 46.68 81.691" xml:space="preserve">
             <use xlink:href="#icon-flag"></use>
           </svg>
           <table class="contacts__list">
             <tbody class="contacts__body">
               <tr class="contacts__row">
-                  <td class="contacts__col--1">e-mail:</td>
+                  <td class="contacts__col contacts__col--1">e-mail:</td>
                   <td class="contacts__col contacts__col--email"><a class="contacts__link" href="#">info@mimimishkashop.ru</a></td>
               </tr>
               <tr class="contacts__row contacts__row--2">
-                  <td class="contacts__col--1 contacts__col--addres">адрес:</td>
-                  <td class="contacts__col contacts__col--addres">г. Санкт-Петербург,<br>
+                  <td class="contacts__col contacts__col--1 contacts__col--address">адрес:</td>
+                  <td class="contacts__col contacts__col--address">г. Санкт-Петербург,<br>
                     ул. Большая Конюшенная,<br>
                     д. 19/8, офис 101</td>
               </tr>
@@ -256,21 +257,21 @@
             <ul class="social__list">
               <li class="social__item">
                 <a href="" class="social__link social__link--inst">
-                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.769px" height="21.334px" enable-background="new 53.115 53.19 21.769 21.334" xml:space="preserve">
+                  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.769px" height="21.334px" enable-background="new 53.115 53.19 21.769 21.334" xml:space="preserve">
                     <use xlink:href="#icon-insta"></use>
                   </svg>
                 </a>
               </li>
               <li class="social__item">
                 <a href="" class="social__link social__link--fb">
-                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="14.962px" height="27.718px" enable-background="new 56.519 49.996 14.962 27.718" xml:space="preserve">
+                  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="14.962px" height="27.718px" enable-background="new 56.519 49.996 14.962 27.718" xml:space="preserve">
                     <use xlink:href="#icon-fb"></use>
                   </svg>
                 </a>
               </li>
               <li class="social__item">
                 <a href="" class="social__link social__link--tw">
-                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="23.494px" height="20.168px" enable-background="new 52.253 53.771 23.494 20.168" xml:space="preserve">
+                  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="23.494px" height="20.168px" enable-background="new 52.253 53.771 23.494 20.168" xml:space="preserve">
                     <use xlink:href="#icon-twitter"></use>
                   </svg>
                 </a>
