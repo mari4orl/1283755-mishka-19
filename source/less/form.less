@@ -80,10 +80,26 @@
 
 .form__radio-label {
   cursor: pointer;
+
+  &:hover .form__radio-indicator {
+    box-shadow: 0 0 0 2px #62d1ba;
+  }
+
+  &:active .form__radio-indicator {
+    box-shadow: 0 0 0 2px #c8c8c8;
+  }
 }
 
 .form__checkbox-label {
   cursor: pointer;
+
+  &:hover .form__checkbox-indicator {
+    border-color: #62d1ba;
+  }
+
+  &:active .form__checkbox-indicator {
+    border-color: #c8c8c8;
+  }
 }
 
 .form__radio + .form__radio-indicator {
@@ -108,16 +124,6 @@
     background-color: transparent;
     box-shadow: 0 0 0 2px @gray-light;
     cursor: auto;
-  }
-}
-
-.form__radio-item {
-  &:hover .form__radio-indicator {
-    box-shadow: 0 0 0 2px #62d1ba;
-  }
-
-  &:active .form__radio-indicator {
-    box-shadow: 0 0 0 2px #c8c8c8;
   }
 }
 
@@ -158,18 +164,6 @@
   &:disabled + .form__checkbox-indicator {
     border: 2px solid @gray-light;
     cursor: auto;
-  }
-}
-
-.form__checkbox-item {
-  &:hover .form__checkbox-indicator {
-    border-color: #62d1ba;
-  }
-}
-
-.form__checkbox-item {
-  &:active .form__checkbox-indicator {
-    border-color: #c8c8c8;
   }
 }
 
@@ -359,6 +353,7 @@
 
   .form__personal-label {
     margin-right: 26px;
+    cursor: pointer;
   }
 
   .form__personal {
@@ -416,10 +411,14 @@
     width: 60px;
     margin: 0;
     margin-top: 23px;
+
+    cursor: pointer;
   }
 
   .form__tel-label {
     margin-top: 17px;
+
+    cursor: pointer;
   }
 
   .form__tel-icon {
@@ -438,6 +437,8 @@
 
   .form__bonus-label {
     margin-right: 127px;
+
+    cursor: pointer;
   }
 
   .form__bonus {

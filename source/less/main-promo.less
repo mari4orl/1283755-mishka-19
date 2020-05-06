@@ -73,51 +73,11 @@
 
   position: relative;
 
-  &--interior {
-    background-color: @green-light;
-
-    padding-top: 23px;
-    padding-bottom: 18px;
-    padding-right: 35px;
-  }
-
-  &--toys {
-    background-color: @green-dark;
-
-    padding-top: 21px;
-    padding-bottom: 22px;
-  }
-}
-
-.main-promo__text {
-  line-height: 24px;
-  text-align: left;
-}
-
-.main-promo__text--toys {
-  padding-top: 4px;
-}
-
-.main-promo__link {
   &:hover,
   &:focus {
     top: -5px;
   }
-}
 
-.main-promo__link--interior {
-  &:hover {
-    background-color: #59d5bc;
-  }
-}
-
-.main-promo__link--toys {
-  &:hover {
-    background-color: #46c1ae;
-  }
-}
-
-.main-promo__link {
   &:focus .main-promo__text {
     opacity: 0.3;
   }
@@ -129,6 +89,38 @@
   &:focus .main-promo__icon {
     fill-opacity: 0.3;
   }
+
+  &--interior {
+    background-color: @green-light;
+
+    padding-top: 23px;
+    padding-bottom: 18px;
+    padding-right: 35px;
+
+    &:hover {
+      background-color: #59d5bc;
+    }
+  }
+
+  &--toys {
+    background-color: @green-dark;
+
+    padding-top: 21px;
+    padding-bottom: 22px;
+
+    &:hover {
+      background-color: #46c1ae;
+    }
+  }
+}
+
+.main-promo__text {
+  line-height: 24px;
+  text-align: left;
+}
+
+.main-promo__text--toys {
+  padding-top: 4px;
 }
 
 .main-promo__icon {
@@ -220,7 +212,8 @@
     border: 0;
     background-image: url("../img/bg-zigzag-fill.svg");
     background-repeat: repeat-x;
-    background-size: auto 24px;
+    background-size: 770px 24px;
+    background-position: center 0;
     position: absolute;
     bottom: 0;
   }
@@ -269,7 +262,13 @@
   }
 
   .main-promo__wave {
-    background-size: auto 34px;
-    height: 19px;
+    background-size: 1150px 34px;
+    background-position: center 0;
+    height: 24px;
+  }
+
+  .main-promo__wave--index {
+    background-size: 1250px 34px;
+    background-position: center 5px;
   }
 }

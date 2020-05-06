@@ -23,7 +23,7 @@
 
   width: 320px;
   border: 1px solid #c6c6c6;
-  padding: 36px 30px 46px;
+  padding: 32px 30px 46px;
   box-shadow: 0 5px 10px 0 rgba(0, 1, 1, 0.25);
   box-sizing: border-box;
   text-align: center;
@@ -32,11 +32,14 @@
 }
 
 .modal__title {
-  width: 146px;
+  width: 148px;
   margin: auto;
+  box-sizing: border-box;
 
   text-transform: uppercase;
   line-height: 30px;
+  font-size: 25px;
+  font-weight: bold;
 }
 
 .modal__text {
@@ -49,6 +52,8 @@
 
   display: flex;
   justify-content: space-between;
+
+  margin-bottom: 31px;
 }
 
 .modal__radio-indicator {
@@ -58,7 +63,6 @@
 
   width: 82px;
   height: 52px;
-  margin-bottom: 31px;
   border: 2px solid #ededed;
   box-sizing: border-box;
 
@@ -81,9 +85,8 @@
 
 .modal__add {
   width: 100%;
-  border: none;
-  padding-top: 18px;
-  padding-bottom: 14px;
+  padding-top: 16px;
+  padding-bottom: 12px;
   background-color: @green-light;
   border: 2px solid @green-light;
   box-sizing: border-box;
@@ -100,19 +103,25 @@
 @media (min-width: @tablet-width) {
   .modal__content {
     width: 566px;
-    padding: 51px 108px 48px;
+    padding: 48px 107px;
+    padding-top: 45px;
+    padding-bottom: 45px;
   }
 
   .modal__title {
     font-size: 30px;
 
-    width: 351px;
+    width: 355px;
   }
 
   .modal__text {
     font-size: 17px;
-    margin-bottom: 26px;
+    margin-bottom: 24px;
     margin-top: 32px;
+  }
+
+  .modal__list {
+    margin-bottom: 30px;
   }
 
   .modal__radio-indicator {
