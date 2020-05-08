@@ -1,15 +1,25 @@
-.social__list {
-  .list-reset();
+.social {
+  display: flex;
+  justify-content: center;
 
   padding-top: 25px;
   padding-bottom: 27px;
-  padding-left: 87px;
-  padding-right: 92px;
   border-bottom: 1px solid #e5e5e5;
+}
+
+.social__list {
+  .list-reset();
 
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
   align-items: center;
+  margin-left: -45px;
+  margin-top: -25px;
+}
+
+.social__item {
+  margin-left: 40px;
+  margin-top: 25px;
 }
 
 .social__link svg {
@@ -30,21 +40,20 @@
 }
 
 @media (min-width: @tablet-width) {
-  .social__list {
+  .social {
+    border: none;
     width: 141px;
     padding: 0;
-    margin-left: 160px;
-    margin-top: 7px;
-    border: none;
+    margin-left: 163px;
+    margin-top: 9px;
   }
 }
 
 @media (min-width: @desktop-width) {
-  .social__list {
+  .social {
     width: 141px;
     padding: 0;
-    margin-left: 80px;
+    margin-left: auto;
     margin-top: 9px;
-    border: none;
   }
 }

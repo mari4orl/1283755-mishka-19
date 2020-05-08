@@ -1,8 +1,8 @@
 .form {
   .container();
   padding: 0 30px;
-  padding-top: 22px;
-  padding-bottom: 55px;
+  padding-top: 21px;
+  padding-bottom: 53px;
 }
 
 .form__description {
@@ -41,7 +41,7 @@
     background-color: @green-light;
 
     position: absolute;
-    top: 8px;
+    top: 9px;
     right: 0;
   }
 }
@@ -66,15 +66,15 @@
   position: relative;
 
   padding-left: 60px;
-  padding-top: 5px;
+  padding-top: 7px;
 
 
   &:first-child {
-    margin-bottom: 20px;
+    margin-bottom: 18px;
   }
 
   &:last-child {
-    margin-bottom: 45px;
+    margin-bottom: 42px;
   }
 }
 
@@ -125,6 +125,10 @@
     box-shadow: 0 0 0 2px @gray-light;
     cursor: auto;
   }
+
+  &:focus + .form__radio-indicator {
+    box-shadow: 0 0 0 2px #62d1ba;
+  }
 }
 
 .form__checkbox-legend {
@@ -139,7 +143,7 @@
   position: relative;
 
   &:last-child {
-    margin-bottom: 43px;
+    margin-bottom: 42px;
   }
 }
 
@@ -165,6 +169,10 @@
     border: 2px solid @gray-light;
     cursor: auto;
   }
+
+  &:focus + .form__checkbox-indicator {
+    border-color: #62d1ba;
+  }
 }
 
 .form__personal-legend {
@@ -181,12 +189,12 @@
   margin-bottom: 21px;
 
   &:last-child {
-    margin-bottom: 29px;
+    margin-bottom: 31px;
   }
 }
 
 .form__personal {
-  padding-top: 15px;
+  padding-top: 14px;
   padding-bottom: 14px;
 }
 
@@ -204,17 +212,24 @@
   &::placeholder {
     color: @gray-form;
     font-size: 17px;
-    font-family: "Open Sans";
+    line-height: 18px;
+    font-family: "Open Sans", "Arial", sans-serif;
   }
 
   color: @gray-text;
   font-size: 19px;
 }
 
+.form__tel {
+  &::placeholder {
+    font-size: 19px;
+  }
+}
+
 .form__tel-icon,
 .form__email-icon {
   position: absolute;
-  right: 7px;
+  right: 5px;
   top: 35px;
 
   fill: #cccccc;
@@ -224,9 +239,12 @@
   min-height: 142px;
   margin-top: 23px;
   padding-top: 16px;
-  padding-left: 17px;
+  padding-left: 16px;
   box-sizing: border-box;
   border: 2px solid @black;
+
+  resize: none;
+  overflow: auto;
 }
 
 .form__notice {
@@ -246,7 +264,7 @@
   .form {
     width: 100%;
     padding: 0;
-    padding-top: 70px;
+    padding-top: 71px;
   }
 
   .form__descr-wrapper {
@@ -259,7 +277,7 @@
     width: 612px;
     font-size: 17px;
     line-height: 30px;
-    margin-bottom: 11px;
+    margin-bottom: 10px;
   }
 
   .form__form {
@@ -286,7 +304,7 @@
   }
 
   .form__radio-item {
-    padding-top: 14px;
+    padding-top: 13px;
     padding-left: 78px;
 
     &:first-child {
@@ -381,11 +399,11 @@
   }
 
   .form__tel {
-    margin-bottom: 17px;
+    margin-bottom: 19px;
     margin-top: 0;
-    padding-top: 17px;
+    padding-top: 15px;
     padding-bottom: 13px;
-    padding-left: 17px;
+    padding-left: 18px;
     background-color: @gray-bg;
 
     width: 501px;
@@ -423,13 +441,13 @@
   }
 
   .form__tel-icon {
-    right: 78px;
-    top: 65px;
+    right: 75px;
+    top: 62px;
   }
 
   .form__email-icon {
-    right: 75px;
-    top: 17px;
+    right: 74px;
+    top: 18px;
   }
 
   .form__textarea .form__container {
@@ -455,8 +473,8 @@
     order: -1;
     width: 230px;
     margin-right: auto;
-    padding-top: 19px;
-    margin-bottom: 50px;
+    padding-top: 18px;
+    margin-bottom: 49px;
   }
 
   .form__notice {
@@ -494,7 +512,12 @@
 
   .form__legend {
     width: 43px;
-    margin-right: 71px;
+    margin-right: 70px;
+    margin-top: 14px;
+  }
+
+  .form__checkbox-legend {
+    margin-top: 17px;
   }
 
   .form__checkbox-list {
@@ -504,7 +527,7 @@
   .form__checkbox-item {
     flex-basis: 20%;
 
-    margin-bottom: 40px;
+    margin-bottom: 42px;
     margin-right: 22px;
   }
 
@@ -541,12 +564,14 @@
   .form__email-label {
     width: 60px;
     margin-right: 53px;
+    margin-top: 21px;
   }
 
   .form__tel {
     margin-bottom: 20px;
     width: 700px;
-    padding-top: 15px;
+    padding-top: 14px;
+    padding-left: 17px;
   }
 
   .form__email {
@@ -565,8 +590,8 @@
   }
 
   .form__tel-icon {
-    right: 232px;
-    top: 62px;
+    right: 230px;
+    top: 60px;
   }
 
   .form__email-icon {
@@ -585,14 +610,19 @@
     margin-right: 73px;
   }
 
+  .form__bonus {
+    padding-top: 12px;
+  }
+
   .form__textarea .form__container {
     padding-right: 225px;
+    padding-top: 49px;
   }
 
   .form__btn {
     margin-left: 113px;
     padding-top: 15px;
-    margin-bottom: 48px;
+    margin-bottom: 49px;
   }
 
   .form__notice {

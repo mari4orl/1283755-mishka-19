@@ -29,7 +29,10 @@ function closeModal() {
 
 for (var i = 0; i < cartIconElems.length; i++) {
   var cartIconElem = cartIconElems[i];
-  cartIconElem.addEventListener('click', openModal);
+  cartIconElem.addEventListener('click', function(evt) {
+  evt.preventDefault();
+  openModal();
+  });
 }
 
 addBtnElem.addEventListener('click', closeModal);

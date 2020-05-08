@@ -100,6 +100,14 @@
     &:hover {
       background-color: #59d5bc;
     }
+
+    &:hover::after {
+      opacity: 0.7;
+    }
+
+    &:focus::after {
+      opacity: 0.3;
+    }
   }
 
   &--toys {
@@ -111,7 +119,35 @@
     &:hover {
       background-color: #46c1ae;
     }
+
+    &:hover::after {
+      opacity: 0.7;
+    }
+
+    &:focus::after {
+      opacity: 0.3;
+    }
   }
+}
+
+.main-promo__link--toys::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 60px;
+  background-image: url("../img/icon-toy.svg");
+  background-repeat: no-repeat;
+  opacity: 0.5;
+}
+
+.main-promo__link--interior::after {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 62px;
+  background-image: url("../img/icon-interior.svg");
+  background-repeat: no-repeat;
+  opacity: 0.5;
 }
 
 .main-promo__text {
