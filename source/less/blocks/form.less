@@ -46,7 +46,7 @@
   }
 }
 
-.form__email-legend::after {
+.form__email-field .form__legend::after {
   width: 179px;
 }
 
@@ -194,29 +194,28 @@
 }
 
 .form__personal {
-  padding-top: 14px;
+  padding-top: 10px;
   padding-bottom: 14px;
 }
 
 .form__tel,
 .form__email {
   margin-bottom: 30px;
-  padding-top: 19px;
-  padding-bottom: 16px;
+  padding-top: 17px;
+  padding-bottom: 14px;
 }
 
 .form__tel,
 .form__email,
-.form__personal,
-.form__bonus {
+.form__bonus,
+.form__personal {
   &::placeholder {
-    color: @gray-form;
+    color: tomato;
     font-size: 17px;
     line-height: 18px;
     font-family: "Open Sans", "Arial", sans-serif;
   }
 
-  color: @gray-text;
   font-size: 19px;
 }
 
@@ -253,6 +252,7 @@
   color: @gray-text;
 
   margin-bottom: 30px;
+  margin-top: 15px;
 }
 
 .form__btn {
@@ -354,7 +354,7 @@
   }
 
   .form__personal-legend {
-    margin-right: 124px;
+    margin-right: 123px;
   }
 
   .form__personal-list {
@@ -367,7 +367,7 @@
     display: flex;
     align-items: center;
 
-    margin-bottom: 25px;
+    margin-bottom: 24px;
   }
 
   .form__personal-label {
@@ -376,8 +376,8 @@
   }
 
   .form__personal {
-    padding-left: 17px;
-    padding-top: 13px;
+    padding-left: 16px;
+    padding-top: 10px;
 
     &::placeholder {
       font-size: 19px;
@@ -399,18 +399,14 @@
   }
 
   .form__tel {
-    margin-bottom: 19px;
+    margin-bottom: 17px;
     margin-top: 0;
-    padding-top: 15px;
+    padding-top: 11px;
     padding-bottom: 13px;
-    padding-left: 18px;
+    padding-left: 17px;
     background-color: @gray-bg;
 
     width: 501px;
-
-    &::placeholder {
-      font-size: 19px;
-    }
   }
 
   .form__email {
@@ -462,7 +458,9 @@
 
   .form__bonus {
     margin: 0;
-    padding-top: 11px;
+    padding-top: 12px;
+    padding-left: 14px;
+    margin-bottom: 3px;
 
     &::placeholder {
       font-size: 19px;
@@ -473,7 +471,7 @@
     order: -1;
     width: 230px;
     margin-right: auto;
-    padding-top: 18px;
+    padding-top: 16px;
     margin-bottom: 49px;
   }
 
@@ -549,7 +547,7 @@
   }
 
   .form__personal {
-    padding-top: 16px;
+    padding-top: 12px;
   }
 
   .form__tel-field .form__container,
@@ -570,12 +568,12 @@
   .form__tel {
     margin-bottom: 20px;
     width: 700px;
-    padding-top: 14px;
+    padding-top: 10px;
     padding-left: 17px;
   }
 
   .form__email {
-    padding-top: 17px;
+    padding-top: 15px;
     width: 700px;
   }
 
@@ -612,6 +610,7 @@
 
   .form__bonus {
     padding-top: 12px;
+    margin-bottom: 0;
   }
 
   .form__textarea .form__container {
