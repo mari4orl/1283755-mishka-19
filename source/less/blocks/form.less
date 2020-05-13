@@ -179,8 +179,6 @@
   margin-bottom: 29px;
 }
 
-.form__tel,
-.form__email,
 .form__personal {
   border-bottom: 2px solid @black;
 }
@@ -196,32 +194,63 @@
 .form__personal {
   padding-top: 10px;
   padding-bottom: 14px;
-}
+  font-size: 19px;
 
-.form__tel,
-.form__email {
-  margin-bottom: 30px;
-  padding-top: 17px;
-  padding-bottom: 14px;
-}
-
-.form__tel,
-.form__email,
-.form__bonus,
-.form__personal {
   &::placeholder {
     color: tomato;
     font-size: 17px;
     line-height: 18px;
     font-family: "Open Sans", "Arial", sans-serif;
   }
-
-  font-size: 19px;
 }
 
+// .form__personal::placeholder {
+//   color: tomato;
+//   font-size: 17px;
+//   line-height: 18px;
+//   font-family: "Open Sans", "Arial", sans-serif;
+// }
+
+// .form__tel,
+// .form__email,
+// .form__bonus,
+// .form__personal {
+//   &::placeholder {
+//     color: tomato;
+//     font-size: 17px;
+//     line-height: 18px;
+//     font-family: "Open Sans", "Arial", sans-serif;
+//   }
+//
+//   font-size: 19px;
+// }
+
 .form__tel {
+  border-bottom: 2px solid @black;
+  margin-bottom: 30px;
+  padding-top: 17px;
+  padding-bottom: 14px;
+
   &::placeholder {
     font-size: 19px;
+    color: tomato;
+    line-height: 18px;
+    font-family: "Open Sans", "Arial", sans-serif;
+  }
+}
+
+.form__email {
+  border-bottom: 2px solid @black;
+  margin-bottom: 30px;
+  padding-top: 17px;
+  padding-bottom: 14px;
+  font-size: 19px;
+
+  &::placeholder {
+    color: tomato;
+    font-size: 17px;
+    line-height: 18px;
+    font-family: "Open Sans", "Arial", sans-serif;
   }
 }
 
@@ -244,6 +273,15 @@
 
   resize: none;
   overflow: auto;
+
+  font-size: 19px;
+
+  &::placeholder {
+    color: tomato;
+    font-size: 17px;
+    line-height: 18px;
+    font-family: "Open Sans", "Arial", sans-serif;
+  }
 }
 
 .form__notice {
