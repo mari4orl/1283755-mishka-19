@@ -51,10 +51,47 @@
 
 .input-text {
   border: none;
+  border-bottom: 2px solid @gray-text;
   width: 100%;
   outline: none;
   font-family: "Open Sans", "Arial", sans-serif;
   color: @gray-text;
+  padding-top: 10px;
+  padding-bottom: 14px;
+  font-size: 19px;
+
+  &::placeholder {
+    color: tomato;
+    font-size: 17px;
+    line-height: 18px;
+    font-family: "Open Sans", "Arial", sans-serif;
+  }
+}
+
+.input-text--tel {
+  margin-bottom: 30px;
+  padding-top: 17px;
+
+  &::placeholder {
+    font-size: 19px;
+  }
+}
+
+.input-text--email {
+  margin-bottom: 30px;
+  padding-top: 17px;
+}
+
+.input-text--bonus {
+  min-height: 142px;
+  margin-top: 23px;
+  padding-top: 16px;
+  padding-left: 16px;
+  box-sizing: border-box;
+  border: 2px solid @gray-text;
+
+  resize: none;
+  overflow: auto;
 }
 
 svg {
@@ -71,6 +108,39 @@ svg {
   .h2 {
     font-size: 43px;
   }
+
+  .input-text {
+    padding-left: 16px;
+    padding-top: 10px;
+
+    &::placeholder {
+      font-size: 19px;
+    }
+  }
+
+  .input-text--tel {
+    margin-bottom: 17px;
+    margin-top: 0;
+    padding-top: 11px;
+    padding-bottom: 13px;
+    background-color: @gray-bg;
+    width: 501px;
+  }
+
+  .input-text--email {
+    margin: 0;
+    background-color: @gray-bg;
+    padding-top: 17px;
+    box-sizing: border-box;
+    width: 501px;
+  }
+
+  .input-text--bonus {
+    margin: 0;
+    padding-top: 12px;
+    padding-left: 14px;
+    margin-bottom: 3px;
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -82,5 +152,31 @@ svg {
 
   .h2 {
     font-size: 53px;
+  }
+
+  .input-text {
+    padding-top: 12px;
+
+    &:hover,
+    &:focus {
+      border-color: @green-light;
+    }
+  }
+
+  .input-text--tel {
+    margin-bottom: 20px;
+    width: 700px;
+    padding-top: 10px;
+    padding-left: 17px;
+  }
+
+  .input-text--email {
+    padding-top: 15px;
+    width: 700px;
+  }
+
+  .input-text--bonus {
+    padding-top: 12px;
+    margin-bottom: 0;
   }
 }

@@ -179,78 +179,11 @@
   margin-bottom: 29px;
 }
 
-.form__personal {
-  border-bottom: 2px solid @black;
-}
-
 .form__personal-item {
   margin-bottom: 21px;
 
   &:last-child {
     margin-bottom: 31px;
-  }
-}
-
-.form__personal {
-  padding-top: 10px;
-  padding-bottom: 14px;
-  font-size: 19px;
-
-  &::placeholder {
-    color: tomato;
-    font-size: 17px;
-    line-height: 18px;
-    font-family: "Open Sans", "Arial", sans-serif;
-  }
-}
-
-// .form__personal::placeholder {
-//   color: tomato;
-//   font-size: 17px;
-//   line-height: 18px;
-//   font-family: "Open Sans", "Arial", sans-serif;
-// }
-
-// .form__tel,
-// .form__email,
-// .form__bonus,
-// .form__personal {
-//   &::placeholder {
-//     color: tomato;
-//     font-size: 17px;
-//     line-height: 18px;
-//     font-family: "Open Sans", "Arial", sans-serif;
-//   }
-//
-//   font-size: 19px;
-// }
-
-.form__tel {
-  border-bottom: 2px solid @black;
-  margin-bottom: 30px;
-  padding-top: 17px;
-  padding-bottom: 14px;
-
-  &::placeholder {
-    font-size: 19px;
-    color: tomato;
-    line-height: 18px;
-    font-family: "Open Sans", "Arial", sans-serif;
-  }
-}
-
-.form__email {
-  border-bottom: 2px solid @black;
-  margin-bottom: 30px;
-  padding-top: 17px;
-  padding-bottom: 14px;
-  font-size: 19px;
-
-  &::placeholder {
-    color: tomato;
-    font-size: 17px;
-    line-height: 18px;
-    font-family: "Open Sans", "Arial", sans-serif;
   }
 }
 
@@ -261,27 +194,6 @@
   top: 35px;
 
   fill: #cccccc;
-}
-
-.form__bonus {
-  min-height: 142px;
-  margin-top: 23px;
-  padding-top: 16px;
-  padding-left: 16px;
-  box-sizing: border-box;
-  border: 2px solid @black;
-
-  resize: none;
-  overflow: auto;
-
-  font-size: 19px;
-
-  &::placeholder {
-    color: tomato;
-    font-size: 17px;
-    line-height: 18px;
-    font-family: "Open Sans", "Arial", sans-serif;
-  }
 }
 
 .form__notice {
@@ -413,15 +325,6 @@
     cursor: pointer;
   }
 
-  .form__personal {
-    padding-left: 16px;
-    padding-top: 10px;
-
-    &::placeholder {
-      font-size: 19px;
-    }
-  }
-
   .form__tel-field .form__container {
     padding-bottom: 0;
     padding-right: 52px;
@@ -434,30 +337,6 @@
 
     display: flex;
     justify-content: space-between;
-  }
-
-  .form__tel {
-    margin-bottom: 17px;
-    margin-top: 0;
-    padding-top: 11px;
-    padding-bottom: 13px;
-    padding-left: 17px;
-    background-color: @gray-bg;
-
-    width: 501px;
-  }
-
-  .form__email {
-    margin: 0;
-    background-color: @gray-bg;
-    padding-left: 17px;
-    box-sizing: border-box;
-
-    width: 501px;
-
-    &::placeholder {
-      font-size: 19px;
-    }
   }
 
   .form__email-label {
@@ -492,17 +371,6 @@
     margin-right: 127px;
 
     cursor: pointer;
-  }
-
-  .form__bonus {
-    margin: 0;
-    padding-top: 12px;
-    padding-left: 14px;
-    margin-bottom: 3px;
-
-    &::placeholder {
-      font-size: 19px;
-    }
   }
 
   .form__btn {
@@ -584,10 +452,6 @@
     margin-bottom: 22px;
   }
 
-  .form__personal {
-    padding-top: 12px;
-  }
-
   .form__tel-field .form__container,
   .form__email-field .form__container {
     padding-right: 225px;
@@ -603,28 +467,6 @@
     margin-top: 21px;
   }
 
-  .form__tel {
-    margin-bottom: 20px;
-    width: 700px;
-    padding-top: 10px;
-    padding-left: 17px;
-  }
-
-  .form__email {
-    padding-top: 15px;
-    width: 700px;
-  }
-
-  .form__tel,
-  .form__email,
-  .form__personal,
-  .form__bonus {
-    &:hover,
-    &:focus {
-      border-color: @green-light;
-    }
-  }
-
   .form__tel-icon {
     right: 230px;
     top: 60px;
@@ -634,21 +476,16 @@
     right: 228px;
     top: 15px;
   }
-
-  .form__tel:hover + .form__tel-icon,
-  .form__email:hover + .form__email-icon,
-  .form__tel:focus + .form__tel-icon,
-  .form__email:focus + .form__email-icon {
-    fill: @green-light;
-  }
+  //
+  // .form__tel:hover + .form__tel-icon,
+  // .form__email:hover + .form__email-icon,
+  // .form__tel:focus + .form__tel-icon,
+  // .form__email:focus + .form__email-icon {
+  //   fill: @green-light;
+  // }
 
   .form__bonus-label {
     margin-right: 73px;
-  }
-
-  .form__bonus {
-    padding-top: 12px;
-    margin-bottom: 0;
   }
 
   .form__textarea .form__container {
